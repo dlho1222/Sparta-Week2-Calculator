@@ -1,10 +1,13 @@
 package com.example.calculator
 
-class AddOperation(private val num1: Double, private val num2: Double) {
+import android.icu.util.UniversalTimeScale.toBigDecimal
+import java.math.BigDecimal
+
+class AddOperation(private val num1: BigDecimal, private val num2: BigDecimal) {
     private var operationResult = num1 + num2
 
-    fun operationReturn(): Double {
-        println("결과 : $operationResult")
+    fun operationReturn(): BigDecimal {
+        println("더하기결과 : $operationResult")
         return operationResult
     }
 }

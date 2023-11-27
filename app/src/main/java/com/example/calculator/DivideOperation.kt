@@ -1,8 +1,10 @@
 package com.example.calculator
 
-class DivideOperation(private val num1 : Double, private val num2 : Double) {
+import java.math.BigDecimal
+
+class DivideOperation(private val num1 : BigDecimal, private val num2 : BigDecimal) {
     private var operationResult = num1 / num2
-    fun operationReturn(): Double {
+    fun operationReturn(): BigDecimal {
         println("결과 : $operationResult")
         return operationResult
     }
