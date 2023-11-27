@@ -2,11 +2,11 @@ package com.example.calculator
 
 fun main() {
     class Calculator {
-        var num1 = readln().toInt()
+        var num1 = readln().toDouble()
         var operator: String = readln()
-        var num2 = readln().toInt()
-        var result = 0
-        fun operation(): Int {
+        var num2 = readln().toDouble()
+        var result:Double = 0.0
+        fun operation(): Double {
             when (operator) {
                 "+" -> result = AddOperation(num1, num2).operationReturn()
                 "-" -> SubstractOperation(num1, num2)
@@ -18,7 +18,7 @@ fun main() {
             println("추가 계산 하려면 연산자를 입력해 주세요")
 
             val addOperation = readln()
-            val num3 = readln()!!.toInt()
+            val num3 = readln()!!.toDouble()
             when (addOperation) {
                 "+" -> result = AddOperation(result, num3).operationReturn()
                 "-" -> result = SubstractOperation(result, num3).operationReturn()

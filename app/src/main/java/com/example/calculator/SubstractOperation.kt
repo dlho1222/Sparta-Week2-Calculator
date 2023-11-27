@@ -1,8 +1,8 @@
 package com.example.calculator
 
-class SubstractOperation(private val num1 : Int, private val num2 : Int) {
+class SubstractOperation(private val num1 : Double, private val num2 : Double) {
     private var operationResult = num1 - num2
-    fun operationReturn(): Int {
+    fun operationReturn(): Double {
         println("결과 : $operationResult")
         return operationResult
     }
