@@ -7,7 +7,7 @@ class DivideOperation:AbstractOperation() {
 
     override fun operate(num1: BigDecimal, num2: BigDecimal): BigDecimal {
         val operationResult = num1 / num2
-        println("결과 : $operationResult")
+        println("나누기 결과 : $operationResult")
         return operationResult
     }
 }
